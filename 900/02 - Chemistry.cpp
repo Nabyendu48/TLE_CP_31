@@ -18,7 +18,8 @@ int main()
 
         long long odd_frequency = 0;
         for (int i = 0; i < 26; i++) // 26
-            odd_frequency += frequency_of_characters[i] % 2;
+            if (frequency_of_characters[i] % 2 ==1)
+                    odd_frequency++ ;
 
         if (odd_frequency > k + 1)
             cout << "NO" << endl;
